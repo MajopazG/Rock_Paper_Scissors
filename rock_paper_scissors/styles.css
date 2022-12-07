@@ -1,0 +1,72 @@
+body {
+    background: rgb(145, 171, 228);
+    font-family: "Lucida Grande", "Lucida Sans", Arial, Sans-serif;
+    align-content: center;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    margin: 3em;
+}
+.gameContent{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+.Rock, .Paper, .Scissors{
+    border-radius:40%;
+    margin: 0;
+    border: 1px solid rgba(0,0,0,0);
+    padding: 0;
+    display:inline-block;
+    position:relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Rock:hover, .Paper:hover, .Scissors:hover{
+    background: rgba(0,0,0,0.2);
+}
+.Rock {
+    padding-left: 5%;
+    width: 70%;
+    height: 70%;
+}
+.Paper {
+    width: 70%;
+    height: 70%;
+}
+.Scissors {
+    width: 70%;
+    height: 70%;
+}
+img {
+    width: 70%;
+    height: 70%;
+}
+.effect {
+    position: absolute;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    transition: all 0.1s;
+}
+
+.effect h1 {
+    text-align: center;
+    font-size: 5em;
+    color: #fff;
+    margin: 2em 0 0;
+    padding: 0;
+    line-height: 1em;
+}
+.effect h3 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+}
